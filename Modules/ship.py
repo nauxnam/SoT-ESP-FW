@@ -11,7 +11,7 @@ from mapping import ships
 from Modules.display_object import DisplayObject
 
 SHIP_COLOR = (100, 0, 0)  # The color we want the indicator circle to be
-CIRCLE_SIZE = 10  # The size of the indicator circle we want
+CIRCLE_SIZE = 6  # The size of the indicator circle we want
 
 
 class Ship(DisplayObject):

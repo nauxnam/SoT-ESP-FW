@@ -14,16 +14,16 @@ from pyglet.text import Label
 # True=Enabled & False=Disabled for each relevant config items
 CONFIG = {
     "CREWS_ENABLED": True,
-    "SHIPS_ENABLED": False
+    "SHIPS_ENABLED": True
 }
 
 # Used to track unique crews
 crew_tracker = {}
 
-version = "1.5.0"
+version = "1.5.0a"
 
 # Config specification for logging file
-logging.basicConfig(filename='DougsESP.log', level=logging.DEBUG,
+logging.basicConfig(filename='ESPlog.log', level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(message)s', filemode="w")
 logger = logging.getLogger()
 
@@ -183,7 +183,7 @@ def initialize_window():
     """
     Initializes our window with a given label
     """
-    b_label = Label(b64decode('RG91Z1RoZURydWlkJ3MgRVNQIEZyYW1ld29yaw==').decode("utf-8"),
-                    x=SOT_WINDOW_W - 537, y=10, font_size=24, bold=True,
+    b_label = Label(b64decode('U09URVNQW2ZyYW1ld29ya10gdmVyOjEuNS4wYQ==').decode("utf-8"),
+                    x=SOT_WINDOW_W - 537, y=10, font_size=12,
                     color=(127, 127, 127, 65), batch=main_batch)
     return b_label
