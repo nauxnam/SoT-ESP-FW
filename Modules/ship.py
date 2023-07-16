@@ -1,8 +1,3 @@
-"""
-@Author https://github.com/DougTheDruid
-@Source https://github.com/DougTheDruid/SoT-ESP-Framework
-"""
-
 from pyglet.text import Label
 from pyglet.shapes import Circle
 from helpers import calculate_distance, object_to_screen, main_batch, \

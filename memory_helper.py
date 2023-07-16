@@ -1,8 +1,3 @@
-"""
-@Author https://github.com/DougTheDruid
-@Source https://github.com/DougTheDruid/SoT-ESP-Framework
-"""
-
 import ctypes
 import ctypes.wintypes
 import struct

@@ -1,9 +1,3 @@
-"""
-@Author https://github.com/DougTheDruid
-@Source https://github.com/DougTheDruid/SoT-ESP-Framework
-"""
-
-
 ships = {
     # ------------ SHIPS / AI SHIPS ------------
     "BP_SmallShipTemplate_C": {

@@ -73,13 +73,13 @@ if __name__ == '__main__':
     config = Config(double_buffer=True, depth_size=24, alpha_size=8)
 
     # Create an overlay window with Pyglet at the same size as our SoT Window
-    window = pyglet.window.Window(SOT_WINDOW_W, SOT_WINDOW_H,
+    window = pyglet.window.Window(SOT_WINDOW_W-20, SOT_WINDOW_H-10,
                                   vsync=False, style='overlay', config=config,
-                                  caption="ESP FRAMEWORK TEST VER-1.5.0a")
+                                  caption="ESP FRAMEWORK TEST VER-1.5.0b")
     hwnd = window._hwnd  # pylint: disable=protected-access
 
     # Move our window to the same location that our SoT Window is at
-    window.set_location(SOT_WINDOW[0], SOT_WINDOW[1])
+    window.set_location(SOT_WINDOW[0]+8, SOT_WINDOW[1])
 
     @window.event
     def on_draw():
@@ -122,7 +122,6 @@ if __name__ == '__main__':
     player_count = Label("...Initializing Framework...",
                          x=SOT_WINDOW_W * 0.85,
                          y=SOT_WINDOW_H * 0.9, batch=main_batch)
-
     # The label for showing all players on the server under the count
     # This purely INITIALIZES it does not inherently update automatically
     if False:  # pylint: disable=using-constant-test

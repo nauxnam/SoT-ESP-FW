@@ -1,8 +1,3 @@
-"""
-@Author https://github.com/DougTheDruid
-@Source https://github.com/DougTheDruid/SoT-ESP-Framework
-"""
-
 import struct
 from helpers import OFFSETS, crew_tracker
 from Modules.display_object import DisplayObject
